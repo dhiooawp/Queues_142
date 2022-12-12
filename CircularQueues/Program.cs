@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace CircularQueues
 {
@@ -42,6 +43,19 @@ namespace CircularQueues
             {
                 Console.WriteLine("Queue underflow\n");
                 return;
+            }
+            Console.WriteLine("\nThe element deleted from the queue is: " + queue_array[FRONT] + "\n");
+            if (FRONT == REAR)
+            {
+                FRONT = -1;
+                REAR = -1;
+            }
+            else
+            {
+                if (FRONT == max - 1)
+                    FRONT = 0;
+                else
+                    FRONT = FRONT + 1;
             }
         }
     }
