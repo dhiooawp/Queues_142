@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using System.Xml.Serialization;
 
 namespace CircularQueues
 {
@@ -57,6 +58,10 @@ namespace CircularQueues
                 else
                     FRONT = FRONT + 1;
             }
+        }
+        public void display()
+        {
+
         }
     }
 }
