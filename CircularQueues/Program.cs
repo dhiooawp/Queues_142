@@ -17,7 +17,11 @@ namespace CircularQueues
         }
         public void insert(int element)
         {
-            
+            if ((FRONT == 0 && REAR == max -1) || (FRONT == +1))
+            {
+                Console.WriteLine("\nQueue overflow\n");
+                return;
+            }
         }
     }
 }
