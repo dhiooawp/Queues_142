@@ -124,7 +124,10 @@ namespace CircularQueues
                             }
                             break;
                         case '2':
-
+                            {
+                                queue.remove();
+                            }
+                            break;
                     }
                 }
             }
