@@ -36,5 +36,13 @@ namespace CircularQueues
             }
             queue_array[REAR] = element;
         }
+        public void remove()
+        {
+            if (FRONT ==-1)
+            {
+                Console.WriteLine("Queue underflow\n");
+                return;
+            }
+        }
     }
 }
